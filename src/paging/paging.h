@@ -30,6 +30,7 @@ struct PageDirectoryEntryFlag {
  * @param flag            Contain 8-bit page directory entry flag
  * @param global_page     Is this page translation global (also cannot be flushed)
  * ...
+ * Note: Assume "Bits 39:32 of address" is 8-bit and Reserved is 1
  */
 struct PageDirectoryEntry {
     struct PageDirectoryEntryFlag flag;
